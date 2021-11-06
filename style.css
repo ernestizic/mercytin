@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Mono&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar{
+  border-bottom: 1px solid rgba(230, 230, 151, 0.2);
+  background-color: #212121;
+}
+.nav-link{
+  color: #fff;
+}
+.nav-link:hover{
+  color: #fcd201;
+}
+
+.hamburger{
+  display: none;
+  color: #fff;
+  font-size: 25px;
+  padding-right: 7px;
+}
+
+/* Navbar 2 */
+.navbar2{
+  z-index: 2000;
+  height: 0;
+  width: 100%;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  background-color: #212121;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.close{
+  font-size: 35px;
+  float: right;
+  padding: 0 20px;
+}
+.navbar2 .links{
+  text-align: center;
+  padding-top: 50%;
+  font-size: 30px;
+}
+.navbar2 a{
+  color: #fff;
+}
+
+body {
+  background-color: #212121;
+  color: #fff;
+}
+
+.navbar .navbar-brand {
+  color: #fcd201;
+  font-family: "Red Hat Mono", monospace;
+  font-weight: bold;
+}
+.header {
+  padding: 170px 0;
+}
+.ui-circle-1 {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: rgba(226, 226, 3, 0.1);
+  position: absolute;
+  right: 60px;
+  top: 90px;
+}
+.ui-circle-2 {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: rgba(182, 3, 12, 0.1);
+  position: absolute;
+  top: 450px;
+}
+.ui-circle-3 {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgba(226, 226, 3, 0.1);
+  position: absolute;
+  right: 90px;
+  top: 1700px;
+}
+.ui-circle-4 {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: rgba(182, 3, 12, 0.1);
+  position: relative;
+  top: 350px;
+}
+.my-desc h4 {
+  padding: 15px 0;
+}
+.my-desc i {
+  font-size: 20px;
+  padding-right: 15px;
+}
+.my-name {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-family: "Red Hat Mono", monospace;
+  color: #cca114;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 118px;
+  z-index: -10;
+  opacity: 1;
+}
+.header p {
+  word-spacing: 5px;
+  line-height: 30px;
+  font-size: 18px;
+  text-align: justify;
+}
+.work-section {
+  margin-top: 600px;
+  background-color: #212121;
+}
+
+.work-container {
+  position: relative;
+  padding: 2px;
+}
+.work-section img {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.work-container:hover img {
+  opacity: 0.2;
+}
+
+.work-container:hover .middle {
+  opacity: 1;
+}
+.text {
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.contact-me {
+  background-color: #212121;
+  padding-bottom: 90px;
+}
+.contact-me img {
+  height: 290px;
+  width: 80%;
+}
+.contact-me h4 {
+  padding: 100px 0 50px 0;
+  text-align: center;
+}
+.contact-me p {
+  font-size: 18px;
+}
+
+.email {
+  display: flex;
+}
+.email p {
+  padding-left: 20px;
+}
+.whatsapp {
+  display: flex;
+}
+.whatsapp p {
+  padding-left: 20px;
+}
+.socials {
+  font-size: 20px;
+  padding-top: 10px;
+}
+.socials i {
+  padding-right: 15px;
+}
+
+/* MOBILE VIEW */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .hamburger{
+    display: initial;
+  }
+
+  .contact-me h4 {
+    padding: 70px 0 0 0;
+    text-align: center;
+  }
+
+  .contact-me img {
+    width: 100%;
+  }
+  .contact2 .email {
+    margin-top: 20px;
+  }
+  .contact2 .av {
+    margin: 20px 0;
+  }
+
+  .header {
+    /* position: relative; */
+    top: 90px;
+    left: 0;
+    padding: 15px;
+  }
+  .work-section {
+    margin-top: 550px;
+    background-color: #212121;
+  }
+  .header p {
+    word-spacing:normal;
+    line-height: 26px;
+    font-size: 15px;
+    text-align: justify;
+  }
+  .my-desc h4 {
+    font-size: 15px;
+  }
+
+  .my-name {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
